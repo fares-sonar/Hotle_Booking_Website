@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+@import url("/css/media.css");
+@import url("/css/basic.css");
+
+/* Start header section */
+.header {
+  padding-bottom: 0;
+}
+.header .flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: var(--sub-color);
+  cursor: pointer;
+}
+
+.header .flex .button {
+  font-size: 3rem;
+  color: var(--sub-color);
+  cursor: pointer;
+  display: none;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--sub-color);
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+}
+
+.header .navbar a {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.header .navbar a:hover {
+  background-color: var(--main-color);
+  color: var(--sub-color);
+}
+/* End header section */
+
+/* Start home section */
+.home .box img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.home .box .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.home .box .flex h3 {
+  font-size: 2.5rem;
+  color: var(--sub-color);
+  text-transform: capitalize;
+}
+
+.home .swiper-button-next {
+  right: 0%;
+}
+.home .swiper-button-prev {
+  left: 0%;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev {
+  background-color: var(--white);
+  padding: 3rem 2rem;
+  top: 45%;
+  opacity: 0.5;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+/* End home section */
+
+/* Start availability */
+.availability form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.availability form .flex .box {
+  flex: 1 1 20rem;
+}
+.availability form .flex .box p {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.availability form .flex .box .input {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+  border-bottom: var(--border);
+  margin-bottom: 1rem;
+}
+.availability
+  form
+  .flex
+  .box
+  .input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+/* End availability */
+
+/* Start about */
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+.about .row .image {
+  flex: 1 1 40rem;
+}
+.about .row .image img {
+  width: 40rem;
+  border-radius: 0.5rem;
+}
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--sub-color);
+  margin-bottom: 1rem;
+}
+.about .row .content p {
+  line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: var(--sub-color);
+}
+.about .row.reverse {
+  flex-flow: row-reverse;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+/*End* about*/
+
+/* Start services section */
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.services .box-container .box {
+  padding: 2rem;
+  text-align: center;
+}
+.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+.services .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--sub-color);
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.services .box-container .box p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--sub-color);
+}
+/* End services section */
+
+/* Start reservation section */
+.reservation form {
+  border: var(--border);
+  padding: 2rem;
+}
+
+.reservation form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.reservation form .flex .box {
+  flex: 1 1 40rem;
+}
+
+.reservation form .flex .box .input {
+  border-bottom: var(--border);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  background: var(--main-color);
+  color: white;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.reservation form .flex .box p {
+  font-size: 1.8rem;
+  color: var(--sub-color);
+}
+.reservation form h3 {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.reservation
+  form
+  .flex
+  .box
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+/* End reservation section */
+
+/* Start gallery section */
+.gallery img {
+  height: 40rem;
+  border-radius: 0.5rem;
+  width: 60rem;
+  object-fit: cover;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--white);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--sub-color);
+}
+/* End gallery section */
+
+/* Start contact section */
+.contact .row {
+  display: flex;
+  align-items: self-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  font-size: 2.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.3rem;
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+.contact .row .faq {
+  flex: 1 1 40rem;
+}
+
+.contact .row form .box {
+  background: var(--main-color);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border-bottom: var(--border);
+  color: var(--sub-color);
+}
+
+.contact .row form textarea {
+  resize: none;
+  height: 15em;
+}
+
+.contact .row form .box::placeholder {
+  color: rgba(220, 198, 156, 0.6);
+}
+
+.contact .row .faq .title {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--sub-color);
+}
+
+/* .contact .row .faq .box{
+  border-radius: .5rem;
+  border: var(--border);
+} */
+
+.contact .row .faq .box h3 {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-size: 2.2rem;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+
+.contact .row .faq .box p {
+  color: var(--sub-color);
+  line-height: 2;
+  font-size: 1.6rem;
+  padding: 1.33rem;
+  display: none;
+}
+
+.contact .row .faq .box.active p {
+  display: inline-block;
+}
+
+/* End contact section */
+.reviews .box {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.reviews .box img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .box h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--sub-color);
+}
+
+.reviews .box p {
+  color: var(--sub-color);
+  line-height: 2;
+  font-size: 1.6rem;
+}
+/* Start reviews section */
+
+/* Start footer section */
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer .box-container .box a {
+  display: block;
+  color: var(--sub-color);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--white);
+}
+.footer .box-container .box:first-child i {
+  margin-right: 1.7rem;
+}
+.footer .box-container .box:nth-child(2) {
+  text-align: center;
+}
+
+.footer .box-container .box:last-child {
+  text-align: right;
+}
+.footer .box-container .box:last-child i {
+  margin-left: 1.7rem;
+}
+
+.footer .credit {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  text-transform:capitalize;
+  border-radius:.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+/* End footer section */
